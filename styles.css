@@ -10,7 +10,7 @@ body{
     display: block;
     margin: auto;
     min-height: 100vh;
-    background: #191919;
+    background: #a17590;
     font-family: sans-serif;
 }
 
@@ -23,7 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 9;
-    background: #1a1a1a;
+    background: #ce96e4;
 }
 
 .link-group{
@@ -32,8 +32,8 @@ body{
 }
 
 .link a{
-    color: #fff;
-    opacity: 0.5;
+    color: #32399b;
+    opacity: 1;
     text-decoration: none;
     text-transform: capitalize;
     padding: 10px 30px;
@@ -44,35 +44,36 @@ body{
 }
 
 .link a:hover, .link.active a{
-    opacity: 1;
+    opacity: 2;
 }
 .home-section{
     width: 100%;
     height: 100vh;
     padding: 0 150px;
     display: flex;
-    align-items: center;
-    position: fixed;
+    align-items:center;
+    position: absoluter;
     top: 0;
-    opacity: 1;
+    opacity: 3;
     transition: 1s;
 }
 
 .hero-heading{
-    color: #504b4b;
+    color: #0e0b0b;
     font-size: 120px;
     text-transform: capitalize;
     font-weight: 300;
+    position:absolute;
 }
 
 .home-img{
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 800px;
     width: 50%;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 .home-section.active,
 .project-section.active,
@@ -491,4 +492,81 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5px;
+}
+/* For small devices (phones) */
+@media screen and (max-width: 600px) {
+    /* Navbar */
+    .navbar {
+        /* Adjust navbar styles for small screens */
+    }
+    
+    /* Home section */
+    .home-section {
+        padding: 0 30px; /* Example padding adjustment */
+    }
+
+    /* Project section */
+    .project-section {
+        padding: 100px 20px; /* Example padding adjustment */
+    }
+
+    /* About section */
+    .about-section {
+        padding: 150px 20px 0; /* Example padding adjustment */
+    }
+
+    /* Skills section */
+    .skill-section {
+        margin: 50px 0; /* Example margin adjustment */
+    }
+
+    /* Timeline section */
+    .timeline {
+        margin: 100px auto; /* Example margin adjustment */
+        width: 90%; /* Example width adjustment */
+    }
+
+    /* Contact section */
+    .contact-section {
+        padding: 100px 20px; /* Example padding adjustment */
+    }
+}
+
+/* For laptops/desktops */
+@media screen and (min-width: 601px) {
+    /* Navbar */
+    .navbar {
+        /* Adjust navbar styles for laptops/desktops */
+    }
+    
+    /* Home section */
+    .home-section {
+        padding: 0 150px; /* Example padding adjustment */
+    }
+
+    /* Project section */
+    .project-section {
+        padding: 150px 100px 100px; /* Example padding adjustment */
+    }
+
+    /* About section */
+    .about-section {
+        padding: 150px 100px 0; /* Example padding adjustment */
+    }
+
+    /* Skills section */
+    .skill-section {
+        margin: 100px 0; /* Example margin adjustment */
+    }
+
+    /* Timeline section */
+    .timeline {
+        margin: 150px auto; /* Example margin adjustment */
+        width: 80%; /* Example width adjustment */
+    }
+
+    /* Contact section */
+    .contact-section {
+        padding: 100px 150px; /* Example padding adjustment */
+    }
 }
